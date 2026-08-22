@@ -1,0 +1,9 @@
+## Interface: 120100
+## Title: MPlusOneLine
+## Notes: 当前赛季大秘境一句话攻略
+## Author: congt
+## Version: 0.1.0
+## SavedVariables: MPlusOneLineDB
+
+Data.lua
+Core.lua
