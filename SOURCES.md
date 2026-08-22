@@ -58,30 +58,32 @@
 
 暴雪 [Curse of Ula'tek WoWCast 公告](https://worldofwarcraft.blizzard.com/en-us/news/24280285)确认《毒液深渊》为《午夜》S2 的 8 首领团本；[赛季公告](https://worldofwarcraft.blizzard.com/en-us/news/24294369/the-shadows-deepen-midnight-season-2-begins-19-august)确认团队查找器、普通、英雄与史诗开放。下列每首领页用于归纳四个支持难度：随机团队只保留共同核心机制；普通/英雄/史诗按页面的难度章节补充差异，非原文转载。
 
+严格审计说明：8 位首领名称与四种可用难度由上述官方/当前团本总览逐条核验。下列提示不会把“伤害更高/目标更多”写成机制差异；若当前公开首领页没有可独立核验的随机团队或难度差异，四个难度会故意显示同一条已核验共通机制。双牙、盘绕祭坛与乌拉泰克暂未写入未核验机制，只保留范围提示，等待可公开访问的当前细节攻略后再补充。
+
 ### 毒液深渊：奈克扎利，缚魂者
 
 <!-- source-id: icy-nekzali -->
-[Icy Veins：Nek'zali Raid Guide](https://www.icy-veins.com/wow/nekzali-the-soulcoiler-raid-guide)（2026-08-22 访问；S2 首领页）：用于小怪、毒圈与转阶段归纳。
+[Icy Veins：毒液深渊总览](https://www.icy-veins.com/wow/venomous-abyss-raid-guide)（2026-08-22 访问；S2 当前总览）：明确其为两阶段、以小怪管理为主的战斗；四难度只保留这一共通点。
 
 ### 毒液深渊：墓葬哨兵
 
 <!-- source-id: icy-entombed-sentinels -->
-[Icy Veins：Entombed Sentinels Raid Guide](https://www.icy-veins.com/wow/entombed-sentinels-raid-guide)（2026-08-22 访问；含普通/英雄/史诗章节）：用于双首领分组、毒药配对与难度差异归纳。
+[Icy Veins：Entombed Sentinels Raid Guide](https://www.icy-veins.com/wow/entombed-sentinels-raid-guide)（2026-08-22 访问；含普通/英雄/史诗章节）：用于双首领分组与控血；随机团队没有独立可靠差异资料，四难度只显示共通机制。
 
 ### 毒液深渊：失落的探险家
 
 <!-- source-id: icy-lost-explorers -->
-[Icy Veins：Lost Explorers Raid Guide](https://www.icy-veins.com/wow/lost-explorers-raid-guide)（2026-08-22 访问；含普通/英雄/史诗章节）：用于喂鱼、冰火打断及分摊归纳。
+[Icy Veins：Lost Explorers Raid Guide](https://www.icy-veins.com/wow/lost-explorers-raid-guide)（2026-08-22 访问；含普通/英雄/史诗章节）：用于三首领不全叠、冰火打断和喂鱼；四难度只显示这些共通机制。
 
 ### 毒液深渊：瓦什尼克，恶性者
 
 <!-- source-id: icy-vashnik -->
-[Icy Veins：Vashnik Raid Guide](https://www.icy-veins.com/wow/vashnik-the-malignant-raid-guide)（2026-08-22 访问；S2 首领页）：用于池子强化与毒药配对归纳。
+[Icy Veins：毒液深渊总览](https://www.icy-veins.com/wow/venomous-abyss-raid-guide)（2026-08-22 访问；S2 当前总览）：用于首领摆位决定强化池顺序；四难度未宣称未核验差异。
 
 ### 毒液深渊：斯佐拉克
 
 <!-- source-id: icy-sszorak -->
-[Icy Veins：Sszorak Raid Guide](https://www.icy-veins.com/wow/sszorak-raid-guide)（2026-08-22 访问；含普通/英雄/史诗章节）：用于分摊、毒囊、风场与史诗怒气机制归纳。
+[Icy Veins：Sszorak Raid Guide](https://www.icy-veins.com/wow/sszorak-raid-guide)（2026-08-22 访问；含普通/英雄/史诗章节）：用于前方、分摊、毒囊与转场；随机团队没有独立可靠差异资料，四难度只显示共通机制。
 
 ### 毒液深渊：双牙
 
