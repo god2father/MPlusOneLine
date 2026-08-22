@@ -2,6 +2,10 @@
 
 访问日期：2026-08-22。
 
+## 正式服 API 与 TOC 兼容性
+
+[Warcraft Wiki 的当前 TOC 格式说明](https://warcraft.wiki.gg/wiki/.toc)列出 Mainline/《午夜》12.1.0 的 `## Interface: 120100`；[GetInstanceInfo 文档](https://warcraft.wiki.gg/wiki/API_GetInstanceInfo)确认该 API 返回实例名称、类型与难度 ID，12.0.7 仅在末尾新增返回值。插件据此使用前三个返回值，并监听正式服通用的区域/难度/实例更新事件。此为源码接口核验，不等同于本机游戏内实测。
+
 ## 赛季副本池（官方）
 
 《午夜》S2 的副本池以暴雪 [The Shadows Deepen: Midnight Season 2 Begins](https://worldofwarcraft.blizzard.com/en-us/news/24294369/the-shadows-deepen-midnight-season-2-begins-19-august) 为准：蛇牙祭坛、谋杀街、纳洛拉克巢穴、盲谷、虚痕竞技场、王者之眠、塞塔里斯神庙、红玉新生法池。该公告用于确认赛季与副本名单；它不提供逐本打法。

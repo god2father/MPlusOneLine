@@ -5,6 +5,7 @@ addon_dir="MPlusOneLine"
 sources_file="SOURCES.md"
 
 test -f "$addon_dir/MPlusOneLine.toc"
+rg -q '^## Interface: 120100$' "$addon_dir/MPlusOneLine.toc"
 test -f "$addon_dir/Data.lua"
 test -f "$addon_dir/Core.lua"
 test "$(rg -c 'name = ' "$addon_dir/Data.lua")" = "17"
@@ -27,6 +28,7 @@ rg -q 'LE_PARTY_CATEGORY_INSTANCE' "$addon_dir/Core.lua"
 rg -q 'GetInstanceInfo' "$addon_dir/Core.lua"
 rg -q 'PLAYER_DIFFICULTY_CHANGED' "$addon_dir/Core.lua"
 rg -q 'UPDATE_INSTANCE_INFO' "$addon_dir/Core.lua"
+rg -q 'ZONE_CHANGED_NEW_AREA' "$addon_dir/Core.lua"
 rg -q 'raidBosses' "$addon_dir/Core.lua"
 test -f "$sources_file"
 rg -q 'worldofwarcraft.blizzard.com' "$sources_file"
@@ -34,6 +36,8 @@ test "$(rg -c '^### ' "$sources_file")" = "16"
 test "$(rg -c 'https://www\.' "$sources_file")" -ge "16"
 test "$(rg -c '<!-- source-id:' "$sources_file")" = "16"
 test "$(rg -c '^### 毒液深渊：' "$sources_file")" = "8"
+rg -q 'GetBuildInfo' README.md
+rg -q '120100' README.md
 
 while IFS= read -r dungeon_name; do
   rg -F -q "$dungeon_name" "$sources_file"
