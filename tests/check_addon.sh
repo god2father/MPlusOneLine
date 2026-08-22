@@ -16,6 +16,10 @@ test "$(rg -c 'LFR = ' "$addon_dir/Data.lua")" = "8"
 test "$(rg -c 'Normal = ' "$addon_dir/Data.lua")" = "8"
 test "$(rg -c 'Heroic = ' "$addon_dir/Data.lua")" = "8"
 test "$(rg -c 'Mythic = ' "$addon_dir/Data.lua")" = "8"
+test "$(rg -o '(LFR|Normal|Heroic|Mythic) = \"[^\"]+\"' "$addon_dir/Data.lua" | wc -l | tr -d ' ')" = "32"
+! rg -q '(LFR|Normal|Heroic|Mythic) = ""' "$addon_dir/Data.lua"
+rg -q '永恒毒液' "$addon_dir/Data.lua"
+rg -q '通用安全提醒：先按团队标记站位' "$addon_dir/Data.lua"
 rg -q '^Data.lua$' "$addon_dir/MPlusOneLine.toc"
 rg -q '^Core.lua$' "$addon_dir/MPlusOneLine.toc"
 rg -q 'SLASH_MPLUSONELINE1 = "/mplusoneline"' "$addon_dir/Core.lua"
@@ -36,6 +40,9 @@ test "$(rg -c '^### ' "$sources_file")" = "16"
 test "$(rg -c 'https://www\.' "$sources_file")" -ge "16"
 test "$(rg -c '<!-- source-id:' "$sources_file")" = "16"
 test "$(rg -c '^### 毒液深渊：' "$sources_file")" = "8"
+rg -q 'Method：The Twin Fangs Heroic Boss Guide' "$sources_file"
+rg -q '社区检索结论（未采用）' "$sources_file"
+rg -q '社区经验、非官方' "$sources_file"
 rg -q 'GetBuildInfo' README.md
 rg -q '120100' README.md
 
@@ -63,6 +70,14 @@ icy-voidscar-arena
 icy-kings-rest
 wowhead-temple-of-sethraliss
 wowhead-ruby-life-pools
+icy-nekzali
+icy-entombed-sentinels
+icy-lost-explorers
+icy-vashnik
+icy-sszorak
+method-twin-fangs
+method-index-coiled-altar
+method-index-ulatek
 EOF
 
 echo "Addon static checks passed"
