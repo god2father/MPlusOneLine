@@ -49,3 +49,47 @@
 
 <!-- source-id: wowhead-ruby-life-pools -->
 [Wowhead：Ruby Life Pools Dungeon Overview](https://www.wowhead.com/guide/midnight/ruby-life-pools-dungeon-overview-mythic-plus)（2026-08-22 访问；12.1/S2 概览）：用于核验一王冰雹/碎冰/破盾、二王火元素与尾王优先处理落地龙。
+
+## 团队副本：毒液深渊（官方范围）
+
+暴雪 [Curse of Ula'tek WoWCast 公告](https://worldofwarcraft.blizzard.com/en-us/news/24280285)确认《毒液深渊》为《午夜》S2 的 8 首领团本；[赛季公告](https://worldofwarcraft.blizzard.com/en-us/news/24294369/the-shadows-deepen-midnight-season-2-begins-19-august)确认团队查找器、普通、英雄与史诗开放。下列每首领页用于归纳四个支持难度：随机团队只保留共同核心机制；普通/英雄/史诗按页面的难度章节补充差异，非原文转载。
+
+### 毒液深渊：奈克扎利，缚魂者
+
+<!-- source-id: icy-nekzali -->
+[Icy Veins：Nek'zali Raid Guide](https://www.icy-veins.com/wow/nekzali-the-soulcoiler-raid-guide)（2026-08-22 访问；S2 首领页）：用于小怪、毒圈与转阶段归纳。
+
+### 毒液深渊：墓葬哨兵
+
+<!-- source-id: icy-entombed-sentinels -->
+[Icy Veins：Entombed Sentinels Raid Guide](https://www.icy-veins.com/wow/entombed-sentinels-raid-guide)（2026-08-22 访问；含普通/英雄/史诗章节）：用于双首领分组、毒药配对与难度差异归纳。
+
+### 毒液深渊：失落的探险家
+
+<!-- source-id: icy-lost-explorers -->
+[Icy Veins：Lost Explorers Raid Guide](https://www.icy-veins.com/wow/lost-explorers-raid-guide)（2026-08-22 访问；含普通/英雄/史诗章节）：用于喂鱼、冰火打断及分摊归纳。
+
+### 毒液深渊：瓦什尼克，恶性者
+
+<!-- source-id: icy-vashnik -->
+[Icy Veins：Vashnik Raid Guide](https://www.icy-veins.com/wow/vashnik-the-malignant-raid-guide)（2026-08-22 访问；S2 首领页）：用于池子强化与毒药配对归纳。
+
+### 毒液深渊：斯佐拉克
+
+<!-- source-id: icy-sszorak -->
+[Icy Veins：Sszorak Raid Guide](https://www.icy-veins.com/wow/sszorak-raid-guide)（2026-08-22 访问；含普通/英雄/史诗章节）：用于分摊、毒囊、风场与史诗怒气机制归纳。
+
+### 毒液深渊：双牙
+
+<!-- source-id: icy-twin-fangs -->
+[Icy Veins：Twin Fangs Raid Guide](https://www.icy-veins.com/wow/twin-fangs-raid-guide)（2026-08-22 访问；S2 首领页）：用于首领站位、点名与难度差异归纳。
+
+### 毒液深渊：盘绕祭坛
+
+<!-- source-id: icy-coiled-altar -->
+[Icy Veins：Coiled Altar Raid Guide](https://www.icy-veins.com/wow/coiled-altar-raid-guide)（2026-08-22 访问；S2 首领页）：用于祭坛顺序、分组与难度差异归纳。
+
+### 毒液深渊：乌拉泰克
+
+<!-- source-id: icy-ulatek -->
+[Icy Veins：Ula'tek Raid Guide](https://www.icy-veins.com/wow/ulatek-raid-guide)（2026-08-22 访问；S2 首领页）：用于毒池、转阶段小怪、点名与难度差异归纳。

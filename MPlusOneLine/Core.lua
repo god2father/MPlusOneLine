@@ -76,7 +76,49 @@ local function createDungeonRow(parent, dungeon, index)
     addon:SendTip(dungeon)
   end)
 
+  return { frame = row, tip = tip, name = name, button = sendButton }
+end
+
+local function createRaidRow(parent, boss, index)
+  local row = createDungeonRow(parent, { name = boss.name, tip = boss.tips.LFR }, index)
+  row.button:SetScript("OnClick", function()
+    addon:SendTip({ name = boss.name, tip = row.tip:GetText() })
+  end)
+  row.frame:Hide()
   return row
+end
+
+function addon:RefreshRaidContext()
+  local instanceName, instanceType, difficultyID = GetInstanceInfo()
+  local raid = self.raid
+  local recognized = false
+
+  if instanceType == "raid" and raid then
+    for _, name in ipairs(raid.instanceNames) do
+      if instanceName == name then
+        recognized = true
+        break
+      end
+    end
+  end
+
+  local difficulty = recognized and raid.difficulties[difficultyID] or nil
+  for _, row in ipairs(self.frame.dungeonRows) do row.frame:SetShown(not recognized or difficulty == nil) end
+  for _, row in ipairs(self.frame.raidRows) do row.frame:SetShown(difficulty ~= nil) end
+
+  if recognized and difficulty then
+    self.frame.title:SetText(raid.name .. " · " .. ({ LFR = "团队查找器", Normal = "普通", Heroic = "英雄", Mythic = "史诗" })[difficulty])
+    self.frame.subtitle:SetText("当前团本已自动识别：点击单个首领发送对应难度提示")
+    for index, boss in ipairs(self.raidBosses) do
+      self.frame.raidRows[index].tip:SetText(boss.tips[difficulty])
+    end
+  elseif recognized then
+    self.frame.title:SetText(raid.name)
+    self.frame.subtitle:SetText("当前团队难度暂不支持，已安全隐藏团本攻略。")
+  else
+    self.frame.title:SetText("大秘境一句话攻略")
+    self.frame.subtitle:SetText("优先发送到队伍；无队伍时发送到副本频道")
+  end
 end
 
 function addon:CreateFrame()
@@ -117,30 +159,47 @@ function addon:CreateFrame()
   local closeButton = CreateFrame("Button", nil, frame, "UIPanelCloseButton")
   closeButton:SetPoint("TOPRIGHT", -4, -4)
 
+  frame.dungeonRows = {}
+  frame.raidRows = {}
   for index, dungeon in ipairs(self.dungeons or {}) do
-    createDungeonRow(frame, dungeon, index)
+    frame.dungeonRows[index] = createDungeonRow(frame, dungeon, index)
+  end
+  for index, boss in ipairs(self.raidBosses or {}) do
+    frame.raidRows[index] = createRaidRow(frame, boss, index)
   end
 
+  frame.title = title
+  frame.subtitle = subtitle
   self:RestoreFramePosition(frame)
   table.insert(UISpecialFrames, FRAME_NAME)
   self.frame = frame
+  self:RefreshRaidContext()
   return frame
 end
 
 function addon:ToggleFrame()
   local frame = self:CreateFrame()
   frame:SetShown(not frame:IsShown())
+  if frame:IsShown() then self:RefreshRaidContext() end
 end
 
 local eventFrame = CreateFrame("Frame")
 eventFrame:RegisterEvent("ADDON_LOADED")
+eventFrame:RegisterEvent("PLAYER_ENTERING_WORLD")
+eventFrame:RegisterEvent("ZONE_CHANGED_NEW_AREA")
+eventFrame:RegisterEvent("PLAYER_DIFFICULTY_CHANGED")
+eventFrame:RegisterEvent("UPDATE_INSTANCE_INFO")
 eventFrame:SetScript("OnEvent", function(_, event, loadedAddonName)
-  if event ~= "ADDON_LOADED" or loadedAddonName ~= addonName then
+  if event ~= "ADDON_LOADED" then
+    if addon.frame then addon:RefreshRaidContext() end
     return
   end
 
+  if loadedAddonName ~= addonName then return end
+
   MPlusOneLineDB = MPlusOneLineDB or {}
-  SLASH_MPLUSONELINE1 = "/mplus"
+  SLASH_MPLUSONELINE1 = "/mplusoneline"
+  SLASH_MPLUSONELINE2 = "/mplo"
   SlashCmdList.MPLUSONELINE = function()
     addon:ToggleFrame()
   end
