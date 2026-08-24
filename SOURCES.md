@@ -14,6 +14,8 @@
 
 以下文本由公开攻略自行中文归纳，不复制原文。所有副本均应随热修与数值调整复核；插件不在游戏内联网。
 
+大秘境审计说明：面板按推进顺序显示连续的“首领段”——进入本段后的关键小怪提示，紧接该段首领提示。每个副本页均会列出值得处理的前置小怪；插件只收录确会造成团灭、治疗压力或路线阻塞的读条、前方、护盾、图腾、点名与事件，不罗列普通怪。28 条小怪提示与 28 条首领提示均继承下方对应副本的 `source-id`；文本为中文压缩归纳，能各自单独发送，不复制攻略原文。
+
 ### 蛇牙祭坛
 
 <!-- source-id: icy-altar-of-fangs -->
@@ -49,21 +51,25 @@
 <!-- source-id: wowhead-temple-of-sethraliss -->
 [Wowhead：Temple of Sethraliss Dungeon Overview](https://www.wowhead.com/de/guide/midnight/temple-of-sethraliss-dungeon-overview-mythic-plus)（2026-08-22 访问；12.1/S2 概览）：用于核验双首领的风暴祝福与护盾切换。该页明确标注当前 M+ 速查仍在补充，因此本插件只保留这个已核验重点，不沿用旧版本路线或完整打法。
 
+补充：[Wowhead：First Look at New Temple of Sethraliss in Mythic+ Season 2](https://www.wowhead.com/news/first-look-at-new-temple-of-sethraliss-in-mythic-season-2-382156)（2026-08-22 访问；12.1/S2 改版说明）：用于核验火花引导者会关闭电球迷宫，以及电球守望者/神庙扰乱者的精华扰乱事件。其余沿用机制仅在与现行概览一致时保留为短提示。
+
 ### 红玉新生法池
 
 <!-- source-id: wowhead-ruby-life-pools -->
 [Wowhead：Ruby Life Pools Dungeon Overview](https://www.wowhead.com/guide/midnight/ruby-life-pools-dungeon-overview-mythic-plus)（2026-08-22 访问；12.1/S2 概览）：用于核验一王冰雹/碎冰/破盾、二王火元素与尾王优先处理落地龙。
 
+补充：[Wowhead：First Look at New Ruby Life Pools in Mythic+ Season 2](https://www.wowhead.com/news/first-look-at-new-ruby-life-pools-in-mythic-season-2-382213)（2026-08-22 访问；12.1/S2 改版说明）：用于核验一王门前有必经迷你首领、二王前火元素副官调整，以及尾王路不再有额外关键打断清单。
+
 ## 团队副本：毒液深渊（官方范围）
 
 暴雪 [Curse of Ula'tek WoWCast 公告](https://worldofwarcraft.blizzard.com/en-us/news/24280285)确认《毒液深渊》为《午夜》S2 的 8 首领团本；[赛季公告](https://worldofwarcraft.blizzard.com/en-us/news/24294369/the-shadows-deepen-midnight-season-2-begins-19-august)确认团队查找器、普通、英雄与史诗开放。下列每首领页用于归纳四个支持难度：随机团队只保留共同核心机制；普通/英雄/史诗按页面的难度章节补充差异，非原文转载。
 
-严格审计说明：8 位首领名称与四种可用难度由上述官方/当前团本总览逐条核验。提示分为三类：**已核验共通机制**（专业攻略与当前游戏资料可相互印证）、**社区交叉验证经验**（仅在近期多源一致时采用；本次没有采用任何一项）和**通用安全提醒**（资料不足时的非空、无机制断言提示）。下列文本不会把“伤害更高/目标更多”写成机制差异；若没有可独立核验的难度差异，四个难度会故意显示相同的共通机制或安全提醒。
+严格审计说明：8 位首领名称与四种可用难度由上述官方/当前团本总览逐条核验。提示优先采用**已核验共通机制**；中文社区/视频只能作为与专业攻略一致时的实战佐证，不能单独确立机制。下列文本不会把“伤害更高/目标更多”写成机制差异；若没有可独立核验的难度差异，四个难度会故意显示相同的已核验共通动作。
 
 ### 毒液深渊：奈克扎利，缚魂者
 
-<!-- source-id: icy-nekzali -->
-[Icy Veins：毒液深渊总览](https://www.icy-veins.com/wow/venomous-abyss-raid-guide)（2026-08-22 访问；S2 当前总览）：明确其为两阶段、以小怪管理为主的战斗；四难度只保留这一共通点。
+<!-- source-id: wowhead-nekzali-community -->
+[Wowhead：Nek'zali Boss Guide](https://www.wowhead.com/guide/midnight/raids/venomous-abyss-nekzali-the-soulcoiler-boss-strategy-abilities)（2026-08-22 访问；12.1 当前首领页）：用于盘魂之井、小怪进井与苏醒回响连接的操作提示。下方中文视频仅作当前实战佐证。
 
 ### 毒液深渊：墓葬哨兵
 
@@ -77,8 +83,8 @@
 
 ### 毒液深渊：瓦什尼克，恶性者
 
-<!-- source-id: icy-vashnik -->
-[Icy Veins：毒液深渊总览](https://www.icy-veins.com/wow/venomous-abyss-raid-guide)（2026-08-22 访问；S2 当前总览）：用于首领摆位决定强化池顺序；四难度未宣称未核验差异。
+<!-- source-id: wowhead-vashnik-community -->
+[Wowhead：Vashnik Boss Guide](https://www.wowhead.com/guide/midnight/raids/venomous-abyss-vashnik-the-malignant-boss-strategy-abilities)（2026-08-22 访问；12.1 当前首领页）：用于三座喷泉强化、活体毒液与中间爆炸的操作提示。下方中文视频仅作当前实战佐证。
 
 ### 毒液深渊：斯佐拉克
 
@@ -87,23 +93,27 @@
 
 ### 毒液深渊：双牙
 
-<!-- source-id: method-twin-fangs -->
-[Method：The Twin Fangs Heroic Boss Guide](https://www.method.gg/guides/the-venomous-abyss/the-twin-fangs-heroic)（2026-08-22 访问；2026-08-14 更新；专业攻略）：核验永恒毒液叠层、优先处理三只蛇形小怪及石破必须有人承受。该页为英雄难度；插件对其余难度只复用同一条已核验的共通机制，不声称额外差异。
+<!-- source-id: wowhead-twin-fangs-community -->
+[Wowhead：The Twin Fangs Boss Guide](https://www.wowhead.com/guide/midnight/raids/venomous-abyss-twin-fangs-boss-strategy-abilities)（2026-08-22 访问；12.1 当前首领页）：用于永恒毒液层数、饕餮盛宴清层、蛇形小怪与石破承受。该页与 Method 英雄攻略及下方中文视频均一致；四难度只复用已核验的共通动作，不声称额外差异。
+
+补充交叉核验：[Method：The Twin Fangs Heroic Boss Guide](https://www.method.gg/guides/the-venomous-abyss/the-twin-fangs-heroic)（2026-08-22 访问；2026-08-14 更新；专业攻略）同样说明永恒毒液、盛宴分摊与小怪处理。
 
 补充交叉核验：[Warcraft Wiki：The Twin Fangs](https://warcraft.wiki.gg/wiki/The_Twin_Fangs)（2026-08-22 访问；当前冒险指南资料）同样列出 Eternal Venom、Venomous Emergence 小怪与 Stone Breaker 的承受要求。
 
 ### 毒液深渊：盘绕祭坛
 
-<!-- source-id: method-index-coiled-altar -->
-[Method：Midnight Raid Boss Guides](https://www.method.gg/guides)（2026-08-22 访问；当前索引）列出盘绕祭坛的 S2 攻略入口，但本轮无法从可访问内容取得足以交叉验证的具体机制；四难度均显示**通用安全提醒**，不把它当作首领机制说明。
+<!-- source-id: wowhead-coiled-altar -->
+[Wowhead：The Coiled Altar Boss Guide](https://www.wowhead.com/guide/midnight/raids/venomous-abyss-coiled-altar-boss-strategy-abilities)（2026-08-22 访问；12.1 当前首领页）：用于祖尔金→玛拉克雷斯的三阶段顺序、灵魂绑定后同步击杀，以及毒液/恐惧目标处理。
 
 ### 毒液深渊：乌拉泰克
 
-<!-- source-id: method-index-ulatek -->
-[Method：Midnight Raid Boss Guides](https://www.method.gg/guides)（2026-08-22 访问；当前索引）列出乌拉泰克的 S2 攻略入口，但本轮无法从可访问内容取得足以交叉验证的具体机制；四难度均显示**通用安全提醒**，不把它当作首领机制说明。
+<!-- source-id: wowhead-ulatek -->
+[Wowhead：Ula'tek Boss Guide](https://www.wowhead.com/de/guide/midnight/raids/venomous-abyss-ulatek-boss-strategy-abilities)（2026-08-22 访问；12.1 当前首领页）：用于毒液孵化、卵与小怪优先级、幽魂盘绕分摊；只采用该页明确列出的共通动作。
 
-#### 社区检索结论（未采用）
+#### 中文社区/视频补充审计
 
-- [r/wow：Raidstrats.gg 团本英雄难度攻略发布帖](https://www.reddit.com/r/wow/comments/1v6436d/raidstratsgg_the_venomus_abyss_hc_guides_now/)（2026-08-22 访问；帖文约 4 天前；**社区经验、非官方**）：发帖者称内容基于 PTR 与 Consequence 公会测试，列出了盘绕祭坛链接，但同时说明乌拉泰克仍在制作。它仅能作为“有社区攻略”的线索，不能单独证明实时服机制，因此未写入任何具体提示。
+- [抖音精选：烈毒之渊 1–7 号实战攻略集合](https://jingxuan.douyin.com/m/video/7622494298583420195)（2026-08-22 访问；约 8 天前；**社区经验、非官方**）：可见奈克扎利、瓦什尼克、斯佐拉克和双牙等当前视频条目。双牙的毒层管理/转场规避与 Wowhead、Method 一致，因此仅作为中文实战表达的佐证；其余未能从页面获得可逐条交叉的细节，不单独写入数据。
+- NGA 与其他中文论坛检索未找到可公开访问、能与当前专业页逐条交叉的《毒液深渊》实战帖，因此没有把单帖传闻写入插件。
+- 大秘境中文社区/视频检索同样未找到可公开访问、能与当前专业页逐条交叉采用的首领段小怪短攻略；56 条大秘境动作均来自上文列出的当前 Icy Veins/Wowhead 首领或小怪章节，而非论坛传闻。
 
-本轮没有找到两个独立、近期且相互一致的社区实战结论来补足盘绕祭坛或乌拉泰克，因此没有采用“社区交叉验证经验”。后续若有当前正式服的公开专业攻略或多源一致的实战资料，再单独复核。
+社区资料仅辅助审计，不是本插件机制结论的唯一来源。后续如出现可公开访问、近期且多源一致的中文实战资料，再单独复核难度差异。
